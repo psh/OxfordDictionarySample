@@ -38,4 +38,5 @@ There are a number of points to note:
 3. The APP_ID and the APP_KEY are externally defined in the build.gradle file.
 4. Walking down the chain of data from ```RetrieveEntry``` to ```HeadwordEntry``` to ```LexicalEntry``` to ```Sense``` would normally result in a deeply nested set of loops.  Transforming that processing into an ```Observable``` chain makes the code much more readable.
 
-
+## Final Display
+Writing the adapter for a ```RecyclerView``` can be a lot of work.  The [Renderers](https://github.com/pedrovgs/Renderers) library allows you to focus on the parts of the process that are most important leaving the library to take care of the rest.  This sample doesnt quite do the library justice as there is only a single type of row in the ```RecyclerView```!
